@@ -8,6 +8,7 @@ This project is a simple calculator project .It has four milestones for this mil
 - CSS3
 - BOOTSTRAP4
 - React
+
 ## Live Demo
 [Live_Demo](https://dashboard.heroku.com/apps/powerful-fjord-90604)
 
@@ -38,7 +39,7 @@ To get a local copy up and make it run, follow these simple example steps.
 - Github: [@Lidya-github ](https://github.com/Lidya1234)
 - Twitter: [@Lidya-twitter](https://twitter.com/Lidya42676629)
 - Linkedin: [Lidya-linkedin-link](https://www.linkedin.com/in/lidya-ghebreigziabher-4a94391aa/)
-
+ 
 
 
 ## 🤝 Contributing
