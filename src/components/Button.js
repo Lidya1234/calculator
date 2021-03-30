@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 
-const Button = (props) => {
-  const { buttonName } = props;
-  return (
-    buttonName
-  );
+const Buttons = (buttonName) => (
+
+  <button type="button"> {buttonName} </button>
+
+);
+
+Buttons.protoTypes = {
+  buttonName: PropTypes.string.isRequired,
 };
 
-Button.protoTypes = {
-  buttonname: PropTypes.string.isRequired,
-};
-
-export default Button;
+export default Buttons;

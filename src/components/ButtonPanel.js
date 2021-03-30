@@ -1,30 +1,30 @@
-import Button from './Button';
+import Buttons from './Button';
 
 const ButtonPanel = () => (
   <>
     <div>
-      <Button buttonName="AC" />
-      <Button buttonName="+/-" />
-      <Button buttonName="%" />
-      <Button buttonName="÷" />
+      <Buttons buttonName="AC" />
+      <Buttons buttonName="+/-" />
+      <Buttons buttonName="%" />
+      <Buttons buttonName="÷" />
     </div>
     <div>
-      <Button buttonName="7" />
-      <Button buttonName="8" />
-      <Button buttonName="9" />
-      <Button buttonName="X" />
+      <Buttons buttonName="7" />
+      <Buttons buttonName="8" />
+      <Buttons buttonName="9" />
+      <Buttons buttonName="X" />
     </div>
     <div>
-      <Button buttonName="4" />
-      <Button buttonName="5" />
-      <Button buttonName="6" />
-      <Button buttonName="-" />
+      <Buttons buttonName="4" />
+      <Buttons buttonName="5" />
+      <Buttons buttonName="6" />
+      <Buttons buttonName="-" />
     </div>
     <div>
-      <Button buttonName="0" />
-      <Button buttonName="." />
-      <Button buttonName="=" />
-      <Button buttonName=" " />
+      <Buttons buttonName="0" />
+      <Buttons buttonName="." />
+      <Buttons buttonName="=" />
+      <Buttons buttonName=" " />
     </div>
   </>
 
