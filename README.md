@@ -10,7 +10,7 @@ This project is a simple calculator project .It has four milestones for this mil
 - React
 
 ## Live Demo
-[Live_Demo](https://dashboard.heroku.com/apps/powerful-fjord-90604)
+[Live_Demo](https://powerful-fjord-90604.herokuapp.com/)
 
 ## Getting Started
 
