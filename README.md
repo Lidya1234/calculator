@@ -9,7 +9,8 @@ This project is a simple calculator project .It has four milestones for this mil
 - BOOTSTRAP4
 - React
 
-[Live_Demo] (https://dashboard.heroku.com/apps/powerful-fjord-90604)
+## Live Demo
+[Live_Demo](https://dashboard.heroku.com/apps/powerful-fjord-90604)
 
 ## Getting Started
 
