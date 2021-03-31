@@ -1,12 +1,11 @@
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
+import Button from 'react-bootstrap/Button';
 
-const Buttons = (buttonName) => (
-
-  <button type="button"> {buttonName} </button>
-
+const Buttons = ({ buttonName }) => (
+  <Button className="btn rounded-0 keys">{buttonName}</Button>
 );
 
-Buttons.protoTypes = {
+Buttons.propTypes = {
   buttonName: PropTypes.string.isRequired,
 };
 
