@@ -1,6 +1,6 @@
 # Calculator
 
-This project is a simple calculator project .It has four milestones for this milestone the project is created ,linter files are added and is deployed to heroku.
+This project is a simple calculator project developed using react .With buttons and resultbox added to 
 
 ## Built With
 
