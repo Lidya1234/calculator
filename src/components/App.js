@@ -1,8 +1,8 @@
-// import react from 'react';
 import '../App.css';
+import '../style.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
-// import ButtonPanel from './ButtonPanel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
