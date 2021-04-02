@@ -36,7 +36,7 @@ const calculate = (data, buttonName) => {
     if (total !== null && next === null && total.indexOf('.') === -1) {
       result.total += '.';
     }
-    if (next && next.indexof('.') === -1) {
+    if (next && next.indexOf('.') === -1) {
       result.next += '.';
     }
   }
