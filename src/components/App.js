@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+import react from 'react';
 import '../App.css';
 import '../style.css';
 import ButtonPanel from './ButtonPanel';
@@ -6,14 +6,35 @@ import Display from './Display';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import calculate from '../logic/calculate';
 
-function App() {
-  return (
-    <>
-      <Display />
-      <ButtonPanel />
-    </>
+class App extends react.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
 
-  );
+    };
+  }
+
+    handleClick = ({ buttonName }) => {
+      const result = calculate(this.state, buttonName);
+      console.log(typeof buttonName);
+      this.setState(result);
+      console.log(result);
+    }
+
+    render() {
+      const { total, next, operation } = this.state;
+      console.log(total);
+      return (
+        <>
+
+          <Display total={total} next={next} operation={operation} />
+          <ButtonPanel clickHandler={this.handleClick} />
+        </>
+      );
+    }
 }
 
 export default App;
