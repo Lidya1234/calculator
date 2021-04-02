@@ -1,33 +1,37 @@
+import { PropTypes } from 'prop-types';
 import Buttons from './Button';
 
-const ButtonPanel = () => (
+const ButtonPanel = ({ clickHandler }) => (
   <>
     <div>
-      <Buttons buttonName="AC" />
-      <Buttons buttonName="+/-" />
-      <Buttons buttonName="%" />
-      <Buttons buttonName="÷" />
+      <Buttons buttonName="AC" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="+/-" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="%" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="÷" clickHandler={(buttonName) => clickHandler(buttonName)} />
     </div>
     <div>
-      <Buttons buttonName="7" />
-      <Buttons buttonName="8" />
-      <Buttons buttonName="9" />
-      <Buttons buttonName="X" />
+      <Buttons buttonName="7" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="8" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="9" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="X" clickHandler={(buttonName) => clickHandler(buttonName)} />
     </div>
     <div>
-      <Buttons buttonName="4" />
-      <Buttons buttonName="5" />
-      <Buttons buttonName="6" />
-      <Buttons buttonName="-" />
+      <Buttons buttonName="4" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="5" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="6" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="-" clickHandler={(buttonName) => clickHandler(buttonName)} />
     </div>
     <div>
-      <Buttons buttonName="0" />
-      <Buttons buttonName="." />
-      <Buttons buttonName="=" />
-      <Buttons buttonName=" " />
+      <Buttons buttonName="0" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="." clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="=" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="+" clickHandler={(buttonName) => clickHandler(buttonName)} />
     </div>
   </>
 
 );
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
