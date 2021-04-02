@@ -4,10 +4,8 @@ const calculate = (data, buttonName) => {
   const { total, next, operation } = data;
   const result = data;
   if (/[0-9]/.test(buttonName)) {
-    console.log(buttonName);
     if ((total === null || total === '0') && next === null && operation === null) {
       result.total = buttonName;
-      console.log(result.total);
     }
 
     if (total && total !== '0' && next === null && operation === null) {
