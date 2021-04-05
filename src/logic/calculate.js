@@ -4,17 +4,17 @@ const calculate = (data, buttonName) => {
   const { total, next, operation } = data;
   const result = data;
   if (/[0-9]/.test(buttonName)) {
-    if (!total && total === '0' && !next && !operation) {
+    if ((total === null || total === '0') && next === null && operation === null) {
       result.total = buttonName;
     }
 
-    if (total && total !== '0' && !next && !operation) {
+    if (total && total !== '0' && next === null && operation === null) {
       result.total += buttonName;
     }
     if (buttonName === '0' && total === '0') {
       result.total = 0;
     }
-    if (total && operation && (!next || next === '0')) {
+    if (total && operation && (next === null || next === '0')) {
       result.next = buttonName;
     }
     if (total && operation && next) {
@@ -22,7 +22,7 @@ const calculate = (data, buttonName) => {
     }
   }
   if (buttonName === '+/-') {
-    if (total && !next) {
+    if (total && next === null) {
       result.total = operate(total, -1, 'X');
     }
     if (next) {
@@ -30,11 +30,11 @@ const calculate = (data, buttonName) => {
     }
   }
   if (buttonName === '.') {
-    if (!total || total === '0') { result.total = '0.'; }
-    if (total && !next && total.indexof('.') === -1) {
+    if (total === null || total === '0') { result.total = '0.'; }
+    if (total !== null && next === null && total.indexOf('.') === -1) {
       result.total += '.';
     }
-    if (next && next.indexof('.') === -1) {
+    if (next && next.indexOf('.') === -1) {
       result.next += '.';
     }
   }
@@ -47,8 +47,8 @@ const calculate = (data, buttonName) => {
       result.next = operate(next, 100, '÷');
     }
   }
-  if (buttonName === ('+' || '-' || 'X' || '÷')) {
-    if (total && !next) {
+  if (['+', '-', 'X', '÷'].includes(buttonName)) {
+    if (total && next === null) {
       result.operation = buttonName;
     }
   }
@@ -56,14 +56,14 @@ const calculate = (data, buttonName) => {
   if (buttonName === '=') {
     if (total && next) {
       result.total = operate(total, next, operation);
-      result.next = '';
-      result.operation = '';
+      result.next = null;
+      result.operation = null;
     }
   }
   if (buttonName === 'AC') {
-    result.total = undefined;
-    result.next = undefined;
-    result.operation = undefined;
+    result.total = '0';
+    result.next = null;
+    result.operation = null;
   }
 
   return result;

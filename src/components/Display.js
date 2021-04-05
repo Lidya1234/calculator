@@ -1,18 +1,27 @@
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
 
-const Display = (props) => {
-  const { result } = props;
-  return (
-    result
-  );
-};
+const Display = ({ total, next, operation }) => (
+  <>
+    <h1>
+      {total}
+      {operation}
+      {next}
+    </h1>
 
-Display.protoTypes = {
-  result: PropTypes.string.isRequired,
-};
+  </>
+);
 
 Display.defaultProps = {
-  result: 0,
+  total: '0',
+  next: null,
+  operation: null,
+};
+
+Display.propTypes = {
+  total: PropTypes.string,
+  next: PropTypes.string,
+  operation: PropTypes.string,
+
 };
 
 export default Display;
