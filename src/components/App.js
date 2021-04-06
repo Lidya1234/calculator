@@ -1,4 +1,4 @@
-import react from 'react';
+import { useState } from 'react';
 import '../App.css';
 import '../style.css';
 import ButtonPanel from './ButtonPanel';
@@ -6,34 +6,27 @@ import Display from './Display';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import calculate from '../logic/calculate';
 
-class App extends react.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
+const App = () => {
+  const [total, setTotal] = useState(null);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
 
-    };
-  }
+  const handleClick = ({ buttonName }) => {
+    const result = calculate({ total, next, operation }, buttonName);
+    setTotal(result.total);
+    setNext(result.next);
+    setOperation(result.operation);
+  };
 
-    handleClick = ({ buttonName }) => {
-      const result = calculate(this.state, buttonName);
+  return (
 
-      this.setState(result);
-    }
+    <>
 
-    render() {
-      const { total, next, operation } = this.state;
+      <Display total={total} next={next} operation={operation} />
 
-      return (
-        <>
-
-          <Display total={total} next={next} operation={operation} />
-          <ButtonPanel clickHandler={this.handleClick} />
-        </>
-      );
-    }
-}
+      <ButtonPanel clickHandler={handleClick} />
+    </>
+  );
+};
 
 export default App;
