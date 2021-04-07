@@ -1,6 +1,7 @@
 import react from 'react';
 import '../App.css';
 import '../style.css';
+import * as styles from '../style.module.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,9 +29,10 @@ class App extends react.Component {
 
       return (
         <>
-
-          <Display total={total} next={next} operation={operation} />
-          <ButtonPanel clickHandler={this.handleClick} />
+          <div className={styles.app}>
+            <Display total={total} next={next} operation={operation} />
+            <ButtonPanel clickHandler={this.handleClick} />
+          </div>
         </>
       );
     }
