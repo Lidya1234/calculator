@@ -1,6 +1,6 @@
 # Calculator
 
-This project is a simple calculator project developed using react .With buttons and resultbox added to 
+This is a simple math scalculator developed with HTML5,CSS3,Bootstrap4 and React.
 <img src="Capture.PNG">
 ## Built With
 
