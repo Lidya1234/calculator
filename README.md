@@ -1,7 +1,7 @@
 # Calculator
 
 This project is a simple calculator project developed using react .With buttons and resultbox added to 
-
+<img src="Capture.PNG">
 ## Built With
 
 - HTML5
