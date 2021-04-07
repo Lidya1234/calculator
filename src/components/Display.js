@@ -1,13 +1,15 @@
 import { PropTypes } from 'prop-types';
+import * as styles from '../style.module.css';
 
 const Display = ({ total, next, operation }) => (
   <>
-    <h1>
-      {total}
-      {operation}
-      {next}
-    </h1>
-
+    <div className={styles.display}>
+      <h1>
+        {total}
+        {operation}
+        {next}
+      </h1>
+    </div>
   </>
 );
 
