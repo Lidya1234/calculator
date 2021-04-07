@@ -1,0 +1,17 @@
+.app,
+.display,
+.buttonpannel {
+width: 800px;
+margin-left: 20%;
+padding-right: 100px;
+}
+
+.display{
+    margin-right: 100px;
+    background-color: gray;
+    width: 400px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: 70px;
+}
