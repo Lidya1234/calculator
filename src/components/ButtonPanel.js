@@ -22,10 +22,16 @@ const ButtonPanel = ({ clickHandler }) => (
       <Buttons buttonName="-" clickHandler={(buttonName) => clickHandler(buttonName)} />
     </div>
     <div>
+      <Buttons buttonName="1" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="2" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="3" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName="+" clickHandler={(buttonName) => clickHandler(buttonName)} />
+    </div>
+    <div>
       <Buttons buttonName="0" clickHandler={(buttonName) => clickHandler(buttonName)} />
       <Buttons buttonName="." clickHandler={(buttonName) => clickHandler(buttonName)} />
       <Buttons buttonName="=" clickHandler={(buttonName) => clickHandler(buttonName)} />
-      <Buttons buttonName="+" clickHandler={(buttonName) => clickHandler(buttonName)} />
+      <Buttons buttonName=" " clickHandler={(buttonName) => clickHandler(buttonName)} />
     </div>
   </>
 

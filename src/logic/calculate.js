@@ -12,7 +12,7 @@ const calculate = (data, buttonName) => {
       result.total += buttonName;
     }
     if (buttonName === '0' && total === '0') {
-      result.total = 0;
+      result.total = '0';
     }
     if (total && operation && (next === null || next === '0')) {
       result.next = buttonName;
@@ -31,7 +31,7 @@ const calculate = (data, buttonName) => {
   }
   if (buttonName === '.') {
     if (total === null || total === '0') { result.total = '0.'; }
-    if (total !== null && next === null && total.indexOf('.') === -1) {
+    if (total !== null && total !== '0' && next === null && total.indexOf('.') === -1) {
       result.total += '.';
     }
     if (next && next.indexOf('.') === -1) {
