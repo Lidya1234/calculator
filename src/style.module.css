@@ -1,0 +1,63 @@
+.app,
+.display,
+.buttonpannel {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+
+.display {
+  margin-right: 100px;
+  background-color: gray;
+  height: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 3%;
+}
+
+.buttonpannel div {
+  height: 100px;
+}
+
+.button {
+  width: 25%;
+  height: 100px;
+  text-align: center;
+  color: black;
+  border-color: gray;
+  border-radius: initial;
+}
+
+.color1 {
+  background-color: orange;
+}
+
+.white {
+  background-color: white;
+}
+
+.wide {
+  width: 50%;
+}
+
+nav {
+  background-color: black;
+  height: 50px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  list-style: none;
+  color: azure;
+}
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 100px;
+}
