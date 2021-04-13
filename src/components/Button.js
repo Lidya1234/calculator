@@ -8,7 +8,7 @@ const Buttons = ({
   <button
     type="button"
     className={`${styles.button}
-                                    ${color ? styles.white : styles.color1}
+                                    ${color === 'white' ? styles.white : styles.color1}
                                     ${wide === 'true' ? styles.wide : styles.button}`}
     onClick={() => clickHandler({ buttonName })}
   >

@@ -2,6 +2,7 @@ import * as styles from '../style.module.css';
 
 const Home = () => (
   <div className={styles.home}>
+    <h1> Math Quotes</h1>
     <p>
       Put life in perspective with some short
       yet sage pieces of advice.
