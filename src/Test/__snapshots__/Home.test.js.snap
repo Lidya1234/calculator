@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home has  Title of math Quotes hvhghj 1`] = `
+<h1>
+   Math Quotes
+</h1>
+`;
+
+exports[`Home has  same content with the snapshot 1`] = `
+<h1>
+   Math Quotes
+</h1>
+`;

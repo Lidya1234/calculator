@@ -2,6 +2,7 @@ import * as styles from '../style.module.css';
 
 const Quote = () => (
   <div className={styles.quote}>
+    <h1>Quote Of The Day</h1>
     <p>
 
       Mathematics is not about numbers, equations,
