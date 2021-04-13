@@ -18,6 +18,8 @@ To get a local copy up and make it run, follow these simple example steps.
 -  git clone https://github.com/Lidya1234/calculator
 - npm install
 - npm start
+## Test
+- npm run test
 
 ### Prerequisites
 
